@@ -3,8 +3,6 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-#chrome_driver_path = "/Users/gopi/Development/chromedriver"
-
 driver = webdriver.Chrome()
 
 driver.get("http://secure-retreat-92358.herokuapp.com/")
@@ -16,6 +14,7 @@ first_name.send_keys("Gopi")
 last_name = driver.find_element(By.NAME, "lName")
 last_name.send_keys("Patel")
 
+#dummy email
 email = driver.find_element(By.NAME, "email")
 email.send_keys("gopiPatel@gmail.com")
 
